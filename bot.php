@@ -722,7 +722,7 @@ curl_setopt($ch, CURLOPT_TIMEOUT, 20);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 
 
-for ($time123 = 0; $time123 < 70; $time123++) {
+for ($time123 = 0; $time123 < 100; $time123++) {
 
 ulang:
 ///🟧🟧🟧🟧🟧
