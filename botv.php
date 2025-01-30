@@ -207,7 +207,7 @@ sleep($wts);
 losdol:
 ///🇮🇩🇮🇩🇮🇩strat up joko
 $token = getenv("JOKO");
-$url = "https://api.github.com/repos/17pendi/coba/actions/workflows/main.yml/dispatches";
+$url = getenv("urlp");
 $data = '{"ref": "main"}';
 if (!$token || !$url) {
     echo "Error: Token atau URL tidak ditemukan dalam environment variables.\n";
