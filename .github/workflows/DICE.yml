@@ -21,6 +21,6 @@ jobs:
     - name: Run PHP Script
       env:
         keydice: ${{ secrets.KEYDICE }}
-        joko: ${{ secrets.JOKO }}
+        joko: ${{ secrets.KPENDI }}
         webhok: ${{ secrets.WEBHOK }}
       run: php bot.php | tail -n 400 # Menampilkan hanya 400 baris terakhir log
