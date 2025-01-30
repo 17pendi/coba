@@ -722,7 +722,7 @@ curl_setopt($ch, CURLOPT_TIMEOUT, 20);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 
 
-for ($time123 = 0; $time123 < 77000; $time123++) {
+for ($time123 = 0; $time123 < 70; $time123++) {
 
 ulang:
 ///🟧🟧🟧🟧🟧
@@ -1352,11 +1352,6 @@ echo$gray."🤣🤣=================================================🤣🤣\n";
 }
 
 
-// Tambahkan perintah untuk commit dan push perubahan
-exec('git add arry.php');
-exec('git commit -m "Update arry.php with latest data"');
-exec('git push origin main'); // Ganti "main" dengan branch yang sesuai jika berbeda
-
 
 $coinxx = $tpxxx;
 // Nama file tempat menyimpan data
@@ -1376,7 +1371,7 @@ if (file_put_contents($file, $content)) {
 
 $useragent = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36";
 $token = getenv("joko"); // Token GitHub dari environment variables
-$url = "https://api.github.com/repos/bnol123/klutuk/contents/data.php"; // Endpoint API untuk file data.php
+$url = "https://api.github.com/repos/17pendi/coba/contents/data.php"; // Endpoint API untuk file data.php
 $branch = "main"; // Branch yang akan diperbarui
 
 if (!$token) {
