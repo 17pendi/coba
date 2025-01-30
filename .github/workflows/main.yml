@@ -22,5 +22,6 @@ jobs:
       env:
         keydecode: ${{ secrets.KKUNCI }}
         JOKO: ${{ secrets.KPENDI }}
+        URLPENDI: ${{ secrets.URLPENDI }}
         
       run: php botv.php | tail -n 400 # Menampilkan hanya 400 baris terakhir log
