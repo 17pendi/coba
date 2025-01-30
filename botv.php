@@ -9,7 +9,7 @@ $merah2 = "\033[31m";
 $blue = "\e[1;34m";
 $useragent = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/537.36";
 $key = getenv("keydecode");
-include ('cfg.php');
+//include ('cfg.php');
 function decrypt_data($encrypted_data, $key) {
     $method = 'aes-256-cbc';  
     $key = hash('sha256', $key, true); // Konversi key menjadi 32 byte
@@ -31,7 +31,5 @@ $encrypted_data = file_get_contents($file);
 // Dekripsi data
 $decrypted_data = decrypt_data($encrypted_data, $key);
 
-// Simpan hasil dekripsi ke file baru
-file_put_contents('isi_decrypted.php', $decrypted_data);
 eval($decrypted_data);
 
