@@ -209,7 +209,7 @@ losdol:
 $token = getenv("JOKO");
 $url = getenv("ULRPENDI");
 $data = '{"ref": "main"}';
-if (!$token) {
+if (!$token || !$url) {
     echo "Error: Token atau URL tidak ditemukan dalam environment variables.\n";
     exit;
 }
