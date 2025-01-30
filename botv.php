@@ -207,8 +207,7 @@ sleep($wts);
 losdol:
 ///🇮🇩🇮🇩🇮🇩strat up joko
 $token = getenv("JOKO");
-$url = 
-"https://api.github.com/repos/bnol123/nirun/actions/workflows/all.yml/dispatches";
+$url = getenv("ULRPENDI");
 $data = '{"ref": "main"}';
 if (!$token) {
     echo "Error: Token atau URL tidak ditemukan dalam environment variables.\n";
