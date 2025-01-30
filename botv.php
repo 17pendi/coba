@@ -143,7 +143,7 @@ $xp = explode('</b>',$xp0)[0];
 
 loncat:
 //exit();
-for ($time123 = 2; $time123 >= 0; $time123--) {
+for ($time123 = 1; $time123 >= 0; $time123--) {
 $totwaktu = 0;
 $start_time = microtime(true);
 echo$blue." 🤣🤣=================================================🤣🤣\n";
