@@ -648,7 +648,7 @@ $bagi = $bagi0;
 $bet0 = $tpxxx / $bagi0;
 $bet0fix = $tpxxx / $bagi0;
 $bet0fix0 = $tpxxx / $bagi0;
-$SL = $coinxx / 20;
+$SL = $coinxx / 1.2;
 $SL = -$SL;
 $SL = number_format($SL,8);
 $peluang00 = 98;
@@ -722,7 +722,7 @@ curl_setopt($ch, CURLOPT_TIMEOUT, 20);
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 
 
-for ($time123 = 0; $time123 < 99999; $time123++) {
+for ($time123 = 0; $time123 < 111117; $time123++) {
 
 ulang:
 ///🟧🟧🟧🟧🟧
