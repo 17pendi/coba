@@ -643,7 +643,7 @@ $makulang = 0;
 $kalibet0 = 170; //tambah setiap roll
 $batasroll = 1000000;
 $btsulti = 1;
-$bagi0 = 777777;
+$bagi0 = 2500000;
 $bagi = $bagi0;
 $bet0 = $tpxxx / $bagi0;
 $bet0fix = $tpxxx / $bagi0;
@@ -1200,29 +1200,31 @@ if ($btssatputaranTidakKeluarmax == $satputaranTidakKeluar) { }
 
 
 if ($menang <= 1) {
-$untungrugibet = $bet0fix * 2;}
+$untungrugibet = $bet0fix;}
 if ($kalah <= 1) {
-$totrugi1 = $bet0fix;}
+$totrugi1 = $bet0fix * 2;}
 
 if ($menang >= 1) {
 $makulang = $makulang + 1;
 $bet = $untungrugibet;
+$bet = $bet0fix;
 }
 if ($menang >= 2) {
 $makulang = $makulang + 1;
 $bet = $untungrugibet;
+$bet = $bet0fix;
 }
 
 
 if ($kalah >= 1) {
 $makulang = $makulang + 1;
 $bet = $totrugi1 / ($payout - 1);
-$bet = $bet0fix;
+$bet = $bet * 1.01;
 }
 if ($kalah >= 2) {
 $makulang = $makulang + 1;
 $bet = $totrugi1 / ($payout - 1);
-$bet = $bet0fix;
+$bet = $bet * 1.01;
 }
 
 
