@@ -633,7 +633,7 @@ echo $cyan . "Nonce: " . $kuning . $nonce . $reset . "\n";
 
 echo$cyan1."PILIH COIN: ".$yellow;
 $coin= trim(fgets(STDIN));
-$coin = "xlm";
+$coin = "usdt";
 
 include ('data.php');
 $makulang = 0;
@@ -643,7 +643,7 @@ $makulang = 0;
 $kalibet0 = 170; //tambah setiap roll
 $batasroll = 1000000;
 $btsulti = 1;
-$bagi0 = 2500000;
+$bagi0 = 1000000;
 $bagi = $bagi0;
 $bet0 = $tpxxx / $bagi0;
 $bet0fix = $tpxxx / $bagi0;
@@ -1094,10 +1094,10 @@ $btssatputaranTidakKeluarmax = $btssatputaranTidakKeluarmax - 500;
 if ($btssatputaranTidakKeluarmax < $satputaranTidakKeluar + 330){$btssatputaranTidakKeluarmax = $satputaranTidakKeluarx + 1;}
 $totrugi1 = ($totrugi1 - $profit);
 $menangxxx = $menangxxx + 1;
-$peluang = 50;
+$peluang = 20;
 $roll = $botia;
 $roll = $rollh;
-$roll = rand(1, 99);
+$roll = $DuapuluhanBelumKeluar1;
 $rollbackup = $roll;
 $bet = $bet0fix;
 }
@@ -1108,10 +1108,10 @@ $satputaranTidakKeluarx = $satputaranTidakKeluar;
 $menang = 0;
 $totrugi1 = $totrugi1 + $bet;
 $kalahxxx = $kalahxxx + 1;
-$peluang = 50;
+$peluang = 20;
 $roll = $botia;
 $roll = $rollh1;
-$roll = rand(1, 99);
+$roll = $DuapuluhanBelumKeluar1;
 $rollbackup = $roll;
 $bet = $bet0fix;
 }
@@ -1172,7 +1172,6 @@ $xnx17x = trim(fgets(STDIN));
  if ($xnx17x == "yes"){$kalah = 490;
  }}
  
- $peluang = rand(10, 70);
 
 //☢️☢️☢️☢️backup
 $peluang0 = ((100 - $peluang) / 2);
@@ -1202,7 +1201,7 @@ if ($btssatputaranTidakKeluarmax == $satputaranTidakKeluar) { }
 if ($menang <= 1) {
 $untungrugibet = $bet0fix;}
 if ($kalah <= 1) {
-$totrugi1 = $bet0fix * 2;}
+$totrugi1 = $bet0fix;}
 
 if ($menang >= 1) {
 $makulang = $makulang + 1;
@@ -1241,8 +1240,8 @@ system('mpv /storage/emulated/0/termux/dice/wolf/monster.mp3');
 die();}
 
 ///🎲🎲🍒🍒🍒👍👍👍👍👍👍
-if ($kalah == 160){$ganda++;}
-if ($kalah >= 160){$bet = $bet0fix;
+if ($kalah == 70){$ganda++;}
+if ($kalah >= 70){$bet = $bet0fix;
 }
 
 if ($menang == 160){$maetiagel++;}
